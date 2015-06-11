@@ -42,7 +42,7 @@ class Proxy
      * URI to add before relative urls as well as default URL
      * @var string
      */
-    protected $prefix = 'https://thepiratebay.la';
+    protected $prefix = 'https:/coolmath-games.com';
     
     /**
      * Url to proxy.php
@@ -108,7 +108,7 @@ class Proxy
         // Set response headers
         $this->setResponseHeaders($header);
         
-        $body = preg_replace('/https:..piratebay.org/', '/static', $body);
+        $body = preg_replace('https:.coolmath-games.com', '/static', $body);
                
         return $body;
     }
